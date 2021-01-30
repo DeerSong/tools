@@ -246,7 +246,6 @@ func gofmtMain() {
 	// doTrace is a conditionally compiled wrapper around runtime/trace. It is
 	// used to allow goimports to compile under gccgo, which does not support
 	// runtime/trace. See https://golang.org/issue/15544.
-	defer doTrace()()
 	if *memProfileRate > 0 {
 		runtime.MemProfileRate = *memProfileRate
 		bw, flush := bufferedFileWriter(*memProfile)

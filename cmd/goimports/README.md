@@ -46,10 +46,11 @@ import(
 ### 使用方法
 
 ```bash
-# 下载代码略过
+# 下载代码
+git clone https://github.com/DeerSong/tools.git
 
 # 进入goimports文件夹
-cd cmd/goimports
+cd tools/cmd/goimports
 
 # 编译出goimports
 go build goimports.go
